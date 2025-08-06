@@ -31,14 +31,19 @@ This is a multilingual medical recommendation system that takes symptoms in **an
 
 ## 🧪 Installation & Setup
 
-### 1. Clone the Repository
+### 1. Download and Extract
+
+- Download the file: [`medical_recommendation_system.zip`]
+- Extract it to your desired directory.
+
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/<your-username>/medical-recommendation-system.git
 cd medical-recommendation-system
 ```
 
-### 2. Create & Activate Virtual Environment
+### 3. Create & Activate Virtual Environment
 
 ```bash
 python -m venv venv
@@ -50,13 +55,13 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3. Install Requirements
+### 4. Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Add OpenAI API Key
+### 5. Add OpenAI API Key
 
 Create a `.env` file in the project root:
 
@@ -71,7 +76,7 @@ export OPENAI_API_KEY=your_openai_api_key   # Linux/macOS
 set OPENAI_API_KEY=your_openai_api_key      # Windows
 ```
 
-### 5. Run the Application
+### 6. Run the Application
 
 ```bash
 uvicorn app.main:app --reload
@@ -81,23 +86,6 @@ Visit: [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## 📁 Project Structure
-
-```
-medical-recommendation-system/
-│
-├── app/
-│   ├── main.py               # FastAPI entrypoint
-│   ├── graph.py              # LangGraph logic
-│   ├── tools.py              # Custom tools: medicine, fuzzy matching, etc.
-│   └── pharma_data/          # Cleaned Indian pharma CSV
-│
-├── static/                   # Frontend assets (CSS, JS)
-├── templates/                # Jinja2 HTML files
-├── requirements.txt
-├── .env
-└── README.md
-```
 
 ---
 
